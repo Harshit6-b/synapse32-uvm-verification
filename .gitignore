@@ -22,3 +22,23 @@ __pycache__
 *.log
 sim_build*/
 build/
+
+xsim.dir/
+*.pb
+*.jou
+*.wdb
+*.backup.jou
+*.log
+xsim_*.log
+
+# Vivado project files
+*.xpr
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# OS files
+.DS_Store
+Thumbs.db
