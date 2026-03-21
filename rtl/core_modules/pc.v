@@ -1,3 +1,4 @@
+`default_nettype wire
 module pc(
    input clk,
    input rst,

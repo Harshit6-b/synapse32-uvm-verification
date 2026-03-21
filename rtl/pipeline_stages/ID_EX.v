@@ -1,3 +1,4 @@
+`default_nettype wire
 module ID_EX(
     input wire clk,
     input wire rst,

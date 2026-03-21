@@ -19,6 +19,14 @@ module riscv_cpu (
     input wire external_interrupt
 );
 
+	 // Instantiate Execution Unit
+    wire [31:0] ex_inst0_exec_output_out;
+    wire ex_inst0_jump_signal_out;
+    wire [31:0] ex_inst0_jump_addr_out;
+    wire [31:0] ex_inst0_mem_addr_out;
+    wire [31:0] ex_inst0_rs1_value_out;
+    wire [31:0] ex_inst0_rs2_value_out;
+
     // Instantiate PC
     wire [31:0] pc_inst0_out;
     wire pc_inst0_j_signal;
@@ -165,13 +173,7 @@ module riscv_cpu (
         .rs2_value_out(id_ex_inst0_rs2_value_out)
     );
 
-    // Instantiate Execution Unit
-    wire [31:0] ex_inst0_exec_output_out;
-    wire ex_inst0_jump_signal_out;
-    wire [31:0] ex_inst0_jump_addr_out;
-    wire [31:0] ex_inst0_mem_addr_out;
-    wire [31:0] ex_inst0_rs1_value_out;
-    wire [31:0] ex_inst0_rs2_value_out;
+   
     
     // Forwarding unit signals
     wire [1:0] forward_a;

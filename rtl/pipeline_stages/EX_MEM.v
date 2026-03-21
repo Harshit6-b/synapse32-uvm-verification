@@ -1,3 +1,4 @@
+`default_nettype wire
 module EX_MEM (
     input wire clk,
     input wire rst,

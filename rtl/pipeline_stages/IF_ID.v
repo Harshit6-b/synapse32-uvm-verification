@@ -1,3 +1,4 @@
+`default_nettype wire
 module IF_ID(
     input wire clk,
     input wire rst,

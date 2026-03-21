@@ -1,0 +1,1 @@
+-L "uvm" "tb_top" -s "tb_sim" --debug "typical" --override_timeprecision --timescale "1ns/1ps" 
